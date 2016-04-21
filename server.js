@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost:27017/mean-demo');
 app.use(bodyParser());
 
 app.get('/', function (req, res) {
+    console.log('hello');
     res.sendfile(__dirname + '/client/views/index.html');
 });
 
