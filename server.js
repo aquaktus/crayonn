@@ -6,6 +6,7 @@ var express           = require('express'),
     meetupsController = require('./server/controllers/meetups-controller');
 
 mongoose.connect('mongodb://localhost:27017/mean-demo');
+//this is a test
 
 app.use(bodyParser());
 
