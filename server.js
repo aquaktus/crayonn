@@ -9,9 +9,9 @@ mongoose.connect('mongodb://localhost:27017/crayonn');
 //this is a bye bye
 
 app.use(bodyParser());
-
+console.log('hello');
 app.get('/', function (req, res) {
-    console.log('hello');
+    
     res.sendfile(__dirname + '/client/views/index.html');
 });
 
