@@ -19,8 +19,8 @@ app.use('/js', express.static(__dirname + '/client/js'));
 
 app.get('/images/:objId/:type', function(req, res){
   var request = url.parse(req.url, true);
-  console.log(__dirname + request.pathname);
-  res.sendfile(__dirname + request.pathname);
+  console.log(request.pathname);
+  res.sendfile(request.pathname);
 });
 
 //REST API
