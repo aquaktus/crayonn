@@ -8,31 +8,6 @@ app.controller('meetupsController', ['$scope', '$resource', function ($scope, $r
 
   $scope.recipes = []
 
-  $scope.slides = [
-    {
-      image: "/images/570e5763e0fd050414e120be/fullSize.jpg",
-      title: 'First image',
-      text: 'this is the first image in the slides array'
-    },
-    {
-      image: 'https://wallpaperscraft.com/image/bread_vegetables_meat_food_70203_1920x1080.jpg',
-      title: 'second image',
-      text: 'this is the second image in the slides array'
-    },
-    {
-      image: 'http://all4desktop.com/data_images/original/4244814-food.jpg',
-      title: 'third image',
-      text: 'this is the third image in the slides array'
-    },
-    {
-      image: 'http://cdn.allwallpaper.in/wallpapers/1920x1080/7543/food-salmon-1920x1080-wallpaper.jpg',
-      title: 'fourth image',
-      text: 'this is the fourth image in the slides array'
-    }
-    ];
-
-
-
   $scope.createRecipe = function () {
     var recipe = new Recipe();
     recipe.name = $scope.recipeName;
