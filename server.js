@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost:27017/crayonn');
 //this is a bye bye
 
 app.use(bodyParser());
-app.use(multipart({uploadDir: config.tmp}));
+//app.use(multipart({uploadDir: config.tmp}));
 
 app.get('/', function (req, res) {
     console.log('hello');
